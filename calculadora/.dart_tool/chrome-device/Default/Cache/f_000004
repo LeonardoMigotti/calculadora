@@ -1,0 +1,1021 @@
+define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/flutter/src/painting/strut_style.dart', 'packages/flutter/src/painting/_network_image_web.dart', 'packages/flutter/src/painting/gradient.dart', 'packages/flutter/src/material/page.dart', 'packages/flutter/src/material/icon_button.dart', 'packages/flutter/src/rendering/stack.dart', 'packages/flutter/src/painting/box_decoration.dart', 'packages/flutter/src/painting/decoration_image.dart', 'packages/flutter/src/painting/box_fit.dart', 'packages/flutter/src/rendering/flex.dart', 'packages/flutter/src/material/circle_avatar.dart', 'packages/flutter/src/material/colors.dart', 'packages/flutter/src/painting/edge_insets.dart', 'packages/flutter/src/material/progress_indicator.dart', 'packages/flutter/src/animation/listener_helpers.dart'], (function load__packages__splashscreen__splashscreen_dart(dart_sdk, packages__flutter__src__widgets__widget_span$46dart, packages__flutter__src__painting__strut_style$46dart, packages__flutter__src__painting___network_image_web$46dart, packages__flutter__src__painting__gradient$46dart, packages__flutter__src__material__page$46dart, packages__flutter__src__material__icon_button$46dart, packages__flutter__src__rendering__stack$46dart, packages__flutter__src__painting__box_decoration$46dart, packages__flutter__src__painting__decoration_image$46dart, packages__flutter__src__painting__box_fit$46dart, packages__flutter__src__rendering__flex$46dart, packages__flutter__src__material__circle_avatar$46dart, packages__flutter__src__material__colors$46dart, packages__flutter__src__painting__edge_insets$46dart, packages__flutter__src__material__progress_indicator$46dart, packages__flutter__src__animation__listener_helpers$46dart) {
+  'use strict';
+  const core = dart_sdk.core;
+  const ui = dart_sdk.ui;
+  const async = dart_sdk.async;
+  const _interceptors = dart_sdk._interceptors;
+  const dart = dart_sdk.dart;
+  const dartx = dart_sdk.dartx;
+  const text = packages__flutter__src__widgets__widget_span$46dart.src__widgets__text;
+  const widget_inspector = packages__flutter__src__widgets__widget_span$46dart.src__widgets__widget_inspector;
+  const framework = packages__flutter__src__widgets__widget_span$46dart.src__widgets__framework;
+  const image = packages__flutter__src__widgets__widget_span$46dart.src__widgets__image;
+  const navigator = packages__flutter__src__widgets__widget_span$46dart.src__widgets__navigator;
+  const basic = packages__flutter__src__widgets__widget_span$46dart.src__widgets__basic;
+  const container = packages__flutter__src__widgets__widget_span$46dart.src__widgets__container;
+  const heroes = packages__flutter__src__widgets__widget_span$46dart.src__widgets__heroes;
+  const text_style = packages__flutter__src__painting__strut_style$46dart.src__painting__text_style;
+  const image_provider = packages__flutter__src__painting___network_image_web$46dart.src__painting__image_provider;
+  const gradient = packages__flutter__src__painting__gradient$46dart.src__painting__gradient;
+  const page = packages__flutter__src__material__page$46dart.src__material__page;
+  const scaffold = packages__flutter__src__material__icon_button$46dart.src__material__scaffold;
+  const ink_well = packages__flutter__src__material__icon_button$46dart.src__material__ink_well;
+  const stack = packages__flutter__src__rendering__stack$46dart.src__rendering__stack;
+  const box_decoration = packages__flutter__src__painting__box_decoration$46dart.src__painting__box_decoration;
+  const decoration_image = packages__flutter__src__painting__decoration_image$46dart.src__painting__decoration_image;
+  const box_fit = packages__flutter__src__painting__box_fit$46dart.src__painting__box_fit;
+  const flex = packages__flutter__src__rendering__flex$46dart.src__rendering__flex;
+  const circle_avatar = packages__flutter__src__material__circle_avatar$46dart.src__material__circle_avatar;
+  const colors = packages__flutter__src__material__colors$46dart.src__material__colors;
+  const edge_insets = packages__flutter__src__painting__edge_insets$46dart.src__painting__edge_insets;
+  const progress_indicator = packages__flutter__src__material__progress_indicator$46dart.src__material__progress_indicator;
+  const animations = packages__flutter__src__animation__listener_helpers$46dart.src__animation__animations;
+  var splashscreen = Object.create(dart.library);
+  var $_get = dartx._get;
+  dart._checkModuleNullSafetyMode(false);
+  var T = {
+    _LocationL: () => (T._LocationL = dart.constFn(dart.legacy(widget_inspector._Location)))(),
+    StringL: () => (T.StringL = dart.constFn(dart.legacy(core.String)))(),
+    ObjectL: () => (T.ObjectL = dart.constFn(dart.legacy(core.Object)))(),
+    WidgetL: () => (T.WidgetL = dart.constFn(dart.legacy(framework.Widget)))(),
+    BuildContextL: () => (T.BuildContextL = dart.constFn(dart.legacy(framework.BuildContext)))(),
+    BuildContextLToWidgetL: () => (T.BuildContextLToWidgetL = dart.constFn(dart.fnType(T.WidgetL(), [T.BuildContextL()])))(),
+    VoidToNull: () => (T.VoidToNull = dart.constFn(dart.fnType(core.Null, [])))(),
+    dynamicToNull: () => (T.dynamicToNull = dart.constFn(dart.fnType(core.Null, [dart.dynamic])))(),
+    VoidTovoid: () => (T.VoidTovoid = dart.constFn(dart.fnType(dart.void, [])))(),
+    VoidToNvoid: () => (T.VoidToNvoid = dart.constFn(dart.nullable(T.VoidTovoid())))(),
+    JSArrayOfWidgetL: () => (T.JSArrayOfWidgetL = dart.constFn(_interceptors.JSArray$(T.WidgetL())))(),
+    ColorL: () => (T.ColorL = dart.constFn(dart.legacy(ui.Color)))(),
+    AlwaysStoppedAnimationOfColorL: () => (T.AlwaysStoppedAnimationOfColorL = dart.constFn(animations.AlwaysStoppedAnimation$(T.ColorL())))()
+  };
+  var T$Eval = Object.assign({
+    _: () => T$Eval
+  }, T);
+  var S = {
+    _: () => S
+  };
+  var S$Eval = Object.assign({
+    _: () => S$Eval
+  }, S);
+  const CT = Object.create({
+    _: () => (C, CT)
+  });
+  dart.defineLazy(CT, {
+    get C3() {
+      return C[3] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 29,
+        [_Location_line]: 67,
+        [_Location_file]: null
+      });
+    },
+    get C2() {
+      return C[2] = dart.constList([C[3] || CT.C3], T._LocationL());
+    },
+    get C1() {
+      return C[1] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[2] || CT.C2,
+        [_Location_name]: null,
+        [_Location_column]: 24,
+        [_Location_line]: 67,
+        [_Location_file]: "file:///C:/Users/pro_s/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/splashscreen-1.3.5/lib/splashscreen.dart"
+      });
+    },
+    get C0() {
+      return C[0] = dart.const({
+        __proto__: text.Text.prototype,
+        [Widget__location]: C[1] || CT.C1,
+        [Widget_key]: null,
+        [Text_textHeightBehavior]: null,
+        [Text_textWidthBasis]: null,
+        [Text_semanticsLabel]: null,
+        [Text_maxLines]: null,
+        [Text_textScaleFactor]: null,
+        [Text_overflow]: null,
+        [Text_softWrap]: null,
+        [Text_locale]: null,
+        [Text_textDirection]: null,
+        [Text_textAlign]: null,
+        [Text_strutStyle]: null,
+        [Text_style]: null,
+        [Text_textSpan]: null,
+        [Text_data]: ""
+      });
+    },
+    get C4() {
+      return C[4] = dart.const({
+        __proto__: ui.Color.prototype,
+        [Color_value]: 4294967295.0
+      });
+    },
+    get C6() {
+      return C[6] = dart.const({
+        __proto__: ui.FontWeight.prototype,
+        [FontWeight_index]: 6
+      });
+    },
+    get C7() {
+      return C[7] = dart.const({
+        __proto__: ui.Color.prototype,
+        [Color_value]: 4278190080.0
+      });
+    },
+    get C5() {
+      return C[5] = dart.const({
+        __proto__: text_style.TextStyle.prototype,
+        [TextStyle_fontFeatures]: null,
+        [TextStyle_shadows]: null,
+        [TextStyle_debugLabel]: null,
+        [TextStyle_decorationThickness]: null,
+        [TextStyle_decorationStyle]: null,
+        [TextStyle_decorationColor]: null,
+        [TextStyle_decoration]: null,
+        [TextStyle_background]: null,
+        [TextStyle_foreground]: null,
+        [TextStyle_locale]: null,
+        [TextStyle_height]: null,
+        [TextStyle_textBaseline]: null,
+        [TextStyle_wordSpacing]: null,
+        [TextStyle_letterSpacing]: null,
+        [TextStyle_fontStyle]: null,
+        [TextStyle_fontWeight]: C[6] || CT.C6,
+        [TextStyle_fontSize]: 18,
+        [TextStyle__package]: null,
+        [TextStyle__fontFamilyFallback]: null,
+        [TextStyle_fontFamily]: null,
+        [TextStyle_backgroundColor]: null,
+        [TextStyle_color]: C[7] || CT.C7,
+        [TextStyle_inherit]: true
+      });
+    },
+    get C11() {
+      return C[11] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 35,
+        [_Location_line]: 72,
+        [_Location_file]: null
+      });
+    },
+    get C10() {
+      return C[10] = dart.constList([C[11] || CT.C11], T._LocationL());
+    },
+    get C9() {
+      return C[9] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[10] || CT.C10,
+        [_Location_name]: null,
+        [_Location_column]: 30,
+        [_Location_line]: 72,
+        [_Location_file]: "file:///C:/Users/pro_s/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/splashscreen-1.3.5/lib/splashscreen.dart"
+      });
+    },
+    get C8() {
+      return C[8] = dart.const({
+        __proto__: text.Text.prototype,
+        [Widget__location]: C[9] || CT.C9,
+        [Widget_key]: null,
+        [Text_textHeightBehavior]: null,
+        [Text_textWidthBasis]: null,
+        [Text_semanticsLabel]: null,
+        [Text_maxLines]: null,
+        [Text_textScaleFactor]: null,
+        [Text_overflow]: null,
+        [Text_softWrap]: null,
+        [Text_locale]: null,
+        [Text_textDirection]: null,
+        [Text_textAlign]: null,
+        [Text_strutStyle]: null,
+        [Text_style]: null,
+        [Text_textSpan]: null,
+        [Text_data]: ""
+      });
+    },
+    get C14() {
+      return C[14] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "decoration",
+        [_Location_column]: 15,
+        [_Location_line]: 204,
+        [_Location_file]: null
+      });
+    },
+    get C13() {
+      return C[13] = dart.constList([C[14] || CT.C14], T._LocationL());
+    },
+    get C12() {
+      return C[12] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[13] || CT.C13,
+        [_Location_name]: null,
+        [_Location_column]: 17,
+        [_Location_line]: 203,
+        [_Location_file]: "file:///C:/Users/pro_s/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/splashscreen-1.3.5/lib/splashscreen.dart"
+      });
+    },
+    get C17() {
+      return C[17] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 48,
+        [_Location_line]: 228,
+        [_Location_file]: null
+      });
+    },
+    get C16() {
+      return C[16] = dart.constList([C[17] || CT.C17], T._LocationL());
+    },
+    get C15() {
+      return C[15] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[16] || CT.C16,
+        [_Location_name]: null,
+        [_Location_column]: 38,
+        [_Location_line]: 228,
+        [_Location_file]: "file:///C:/Users/pro_s/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/splashscreen-1.3.5/lib/splashscreen.dart"
+      });
+    },
+    get C20() {
+      return C[20] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "tag",
+        [_Location_column]: 27,
+        [_Location_line]: 227,
+        [_Location_file]: null
+      });
+    },
+    get C21() {
+      return C[21] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 27,
+        [_Location_line]: 228,
+        [_Location_file]: null
+      });
+    },
+    get C19() {
+      return C[19] = dart.constList([C[20] || CT.C20, C[21] || CT.C21], T._LocationL());
+    },
+    get C18() {
+      return C[18] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[19] || CT.C19,
+        [_Location_name]: null,
+        [_Location_column]: 32,
+        [_Location_line]: 226,
+        [_Location_file]: "file:///C:/Users/pro_s/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/splashscreen-1.3.5/lib/splashscreen.dart"
+      });
+    },
+    get C24() {
+      return C[24] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "backgroundColor",
+        [_Location_column]: 25,
+        [_Location_line]: 225,
+        [_Location_file]: null
+      });
+    },
+    get C25() {
+      return C[25] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 25,
+        [_Location_line]: 226,
+        [_Location_file]: null
+      });
+    },
+    get C26() {
+      return C[26] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "radius",
+        [_Location_column]: 25,
+        [_Location_line]: 230,
+        [_Location_file]: null
+      });
+    },
+    get C23() {
+      return C[23] = dart.constList([C[24] || CT.C24, C[25] || CT.C25, C[26] || CT.C26], T._LocationL());
+    },
+    get C22() {
+      return C[22] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[23] || CT.C23,
+        [_Location_name]: null,
+        [_Location_column]: 27,
+        [_Location_line]: 224,
+        [_Location_file]: "file:///C:/Users/pro_s/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/splashscreen-1.3.5/lib/splashscreen.dart"
+      });
+    },
+    get C27() {
+      return C[27] = dart.const({
+        __proto__: edge_insets.EdgeInsets.prototype,
+        [EdgeInsets_bottom]: 0,
+        [EdgeInsets_right]: 0,
+        [EdgeInsets_top]: 10,
+        [EdgeInsets_left]: 0
+      });
+    },
+    get C30() {
+      return C[30] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "padding",
+        [_Location_column]: 25,
+        [_Location_line]: 233,
+        [_Location_file]: null
+      });
+    },
+    get C29() {
+      return C[29] = dart.constList([C[30] || CT.C30], T._LocationL());
+    },
+    get C28() {
+      return C[28] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[29] || CT.C29,
+        [_Location_name]: null,
+        [_Location_column]: 27,
+        [_Location_line]: 232,
+        [_Location_file]: "file:///C:/Users/pro_s/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/splashscreen-1.3.5/lib/splashscreen.dart"
+      });
+    },
+    get C33() {
+      return C[33] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "mainAxisAlignment",
+        [_Location_column]: 21,
+        [_Location_line]: 222,
+        [_Location_file]: null
+      });
+    },
+    get C34() {
+      return C[34] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 21,
+        [_Location_line]: 223,
+        [_Location_file]: null
+      });
+    },
+    get C32() {
+      return C[32] = dart.constList([C[33] || CT.C33, C[34] || CT.C34], T._LocationL());
+    },
+    get C31() {
+      return C[31] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[32] || CT.C32,
+        [_Location_name]: null,
+        [_Location_column]: 34,
+        [_Location_line]: 221,
+        [_Location_file]: "file:///C:/Users/pro_s/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/splashscreen-1.3.5/lib/splashscreen.dart"
+      });
+    },
+    get C37() {
+      return C[37] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 23,
+        [_Location_line]: 221,
+        [_Location_file]: null
+      });
+    },
+    get C36() {
+      return C[36] = dart.constList([C[37] || CT.C37], T._LocationL());
+    },
+    get C35() {
+      return C[35] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[36] || CT.C36,
+        [_Location_name]: null,
+        [_Location_column]: 30,
+        [_Location_line]: 220,
+        [_Location_file]: "file:///C:/Users/pro_s/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/splashscreen-1.3.5/lib/splashscreen.dart"
+      });
+    },
+    get C40() {
+      return C[40] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "flex",
+        [_Location_column]: 19,
+        [_Location_line]: 219,
+        [_Location_file]: null
+      });
+    },
+    get C41() {
+      return C[41] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 19,
+        [_Location_line]: 220,
+        [_Location_file]: null
+      });
+    },
+    get C39() {
+      return C[39] = dart.constList([C[40] || CT.C40, C[41] || CT.C41], T._LocationL());
+    },
+    get C38() {
+      return C[38] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[39] || CT.C39,
+        [_Location_name]: null,
+        [_Location_column]: 21,
+        [_Location_line]: 218,
+        [_Location_file]: "file:///C:/Users/pro_s/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/splashscreen-1.3.5/lib/splashscreen.dart"
+      });
+    },
+    get C43() {
+      return C[43] = dart.constList([], T._LocationL());
+    },
+    get C42() {
+      return C[42] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[43] || CT.C43,
+        [_Location_name]: null,
+        [_Location_column]: 29,
+        [_Location_line]: 245,
+        [_Location_file]: "file:///C:/Users/pro_s/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/splashscreen-1.3.5/lib/splashscreen.dart"
+      });
+    },
+    get C46() {
+      return C[46] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "valueColor",
+        [_Location_column]: 31,
+        [_Location_line]: 247,
+        [_Location_file]: null
+      });
+    },
+    get C45() {
+      return C[45] = dart.constList([C[46] || CT.C46], T._LocationL());
+    },
+    get C44() {
+      return C[44] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[45] || CT.C45,
+        [_Location_name]: null,
+        [_Location_column]: 29,
+        [_Location_line]: 246,
+        [_Location_file]: "file:///C:/Users/pro_s/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/splashscreen-1.3.5/lib/splashscreen.dart"
+      });
+    },
+    get C47() {
+      return C[47] = dart.const({
+        __proto__: edge_insets.EdgeInsets.prototype,
+        [EdgeInsets_bottom]: 0,
+        [EdgeInsets_right]: 0,
+        [EdgeInsets_top]: 20,
+        [EdgeInsets_left]: 0
+      });
+    },
+    get C50() {
+      return C[50] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "padding",
+        [_Location_column]: 25,
+        [_Location_line]: 250,
+        [_Location_file]: null
+      });
+    },
+    get C49() {
+      return C[49] = dart.constList([C[50] || CT.C50], T._LocationL());
+    },
+    get C48() {
+      return C[48] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[49] || CT.C49,
+        [_Location_name]: null,
+        [_Location_column]: 23,
+        [_Location_line]: 249,
+        [_Location_file]: "file:///C:/Users/pro_s/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/splashscreen-1.3.5/lib/splashscreen.dart"
+      });
+    },
+    get C53() {
+      return C[53] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "mainAxisAlignment",
+        [_Location_column]: 21,
+        [_Location_line]: 242,
+        [_Location_file]: null
+      });
+    },
+    get C54() {
+      return C[54] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 21,
+        [_Location_line]: 243,
+        [_Location_file]: null
+      });
+    },
+    get C52() {
+      return C[52] = dart.constList([C[53] || CT.C53, C[54] || CT.C54], T._LocationL());
+    },
+    get C51() {
+      return C[51] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[52] || CT.C52,
+        [_Location_name]: null,
+        [_Location_column]: 26,
+        [_Location_line]: 241,
+        [_Location_file]: "file:///C:/Users/pro_s/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/splashscreen-1.3.5/lib/splashscreen.dart"
+      });
+    },
+    get C57() {
+      return C[57] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "flex",
+        [_Location_column]: 19,
+        [_Location_line]: 240,
+        [_Location_file]: null
+      });
+    },
+    get C58() {
+      return C[58] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 19,
+        [_Location_line]: 241,
+        [_Location_file]: null
+      });
+    },
+    get C56() {
+      return C[56] = dart.constList([C[57] || CT.C57, C[58] || CT.C58], T._LocationL());
+    },
+    get C55() {
+      return C[55] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[56] || CT.C56,
+        [_Location_name]: null,
+        [_Location_column]: 17,
+        [_Location_line]: 239,
+        [_Location_file]: "file:///C:/Users/pro_s/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/splashscreen-1.3.5/lib/splashscreen.dart"
+      });
+    },
+    get C61() {
+      return C[61] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "mainAxisAlignment",
+        [_Location_column]: 15,
+        [_Location_line]: 216,
+        [_Location_file]: null
+      });
+    },
+    get C62() {
+      return C[62] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 15,
+        [_Location_line]: 217,
+        [_Location_file]: null
+      });
+    },
+    get C60() {
+      return C[60] = dart.constList([C[61] || CT.C61, C[62] || CT.C62], T._LocationL());
+    },
+    get C59() {
+      return C[59] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[60] || CT.C60,
+        [_Location_name]: null,
+        [_Location_column]: 17,
+        [_Location_line]: 215,
+        [_Location_file]: "file:///C:/Users/pro_s/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/splashscreen-1.3.5/lib/splashscreen.dart"
+      });
+    },
+    get C65() {
+      return C[65] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "fit",
+        [_Location_column]: 11,
+        [_Location_line]: 201,
+        [_Location_file]: null
+      });
+    },
+    get C66() {
+      return C[66] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 11,
+        [_Location_line]: 202,
+        [_Location_file]: null
+      });
+    },
+    get C64() {
+      return C[64] = dart.constList([C[65] || CT.C65, C[66] || CT.C66], T._LocationL());
+    },
+    get C63() {
+      return C[63] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[64] || CT.C64,
+        [_Location_name]: null,
+        [_Location_column]: 20,
+        [_Location_line]: 200,
+        [_Location_file]: "file:///C:/Users/pro_s/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/splashscreen-1.3.5/lib/splashscreen.dart"
+      });
+    },
+    get C69() {
+      return C[69] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "onTap",
+        [_Location_column]: 9,
+        [_Location_line]: 199,
+        [_Location_file]: null
+      });
+    },
+    get C70() {
+      return C[70] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 9,
+        [_Location_line]: 200,
+        [_Location_file]: null
+      });
+    },
+    get C68() {
+      return C[68] = dart.constList([C[69] || CT.C69, C[70] || CT.C70], T._LocationL());
+    },
+    get C67() {
+      return C[67] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[68] || CT.C68,
+        [_Location_name]: null,
+        [_Location_column]: 17,
+        [_Location_line]: 198,
+        [_Location_file]: "file:///C:/Users/pro_s/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/splashscreen-1.3.5/lib/splashscreen.dart"
+      });
+    },
+    get C73() {
+      return C[73] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "body",
+        [_Location_column]: 7,
+        [_Location_line]: 198,
+        [_Location_file]: null
+      });
+    },
+    get C72() {
+      return C[72] = dart.constList([C[73] || CT.C73], T._LocationL());
+    },
+    get C71() {
+      return C[71] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[72] || CT.C72,
+        [_Location_name]: null,
+        [_Location_column]: 12,
+        [_Location_line]: 197,
+        [_Location_file]: "file:///C:/Users/pro_s/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/splashscreen-1.3.5/lib/splashscreen.dart"
+      });
+    }
+  }, false);
+  var C = Array(74).fill(void 0);
+  var I = ["package:splashscreen/splashscreen.dart"];
+  var seconds$ = dart.privateName(splashscreen, "SplashScreen.seconds");
+  var title$ = dart.privateName(splashscreen, "SplashScreen.title");
+  var backgroundColor$ = dart.privateName(splashscreen, "SplashScreen.backgroundColor");
+  var styleTextUnderTheLoader$ = dart.privateName(splashscreen, "SplashScreen.styleTextUnderTheLoader");
+  var navigateAfterSeconds$ = dart.privateName(splashscreen, "SplashScreen.navigateAfterSeconds");
+  var photoSize$ = dart.privateName(splashscreen, "SplashScreen.photoSize");
+  var onClick$ = dart.privateName(splashscreen, "SplashScreen.onClick");
+  var loaderColor$ = dart.privateName(splashscreen, "SplashScreen.loaderColor");
+  var image$ = dart.privateName(splashscreen, "SplashScreen.image");
+  var loadingText$ = dart.privateName(splashscreen, "SplashScreen.loadingText");
+  var imageBackground$ = dart.privateName(splashscreen, "SplashScreen.imageBackground");
+  var gradientBackground$ = dart.privateName(splashscreen, "SplashScreen.gradientBackground");
+  var useLoader$ = dart.privateName(splashscreen, "SplashScreen.useLoader");
+  var pageRoute$ = dart.privateName(splashscreen, "SplashScreen.pageRoute");
+  var routeName$ = dart.privateName(splashscreen, "SplashScreen.routeName");
+  var navigateAfterFuture$ = dart.privateName(splashscreen, "SplashScreen.navigateAfterFuture");
+  var _Location_parameterLocations = dart.privateName(widget_inspector, "_Location.parameterLocations");
+  var _Location_name = dart.privateName(widget_inspector, "_Location.name");
+  var _Location_column = dart.privateName(widget_inspector, "_Location.column");
+  var _Location_line = dart.privateName(widget_inspector, "_Location.line");
+  var _Location_file = dart.privateName(widget_inspector, "_Location.file");
+  var Widget__location = dart.privateName(framework, "Widget._location");
+  var Widget_key = dart.privateName(framework, "Widget.key");
+  var Text_textHeightBehavior = dart.privateName(text, "Text.textHeightBehavior");
+  var Text_textWidthBasis = dart.privateName(text, "Text.textWidthBasis");
+  var Text_semanticsLabel = dart.privateName(text, "Text.semanticsLabel");
+  var Text_maxLines = dart.privateName(text, "Text.maxLines");
+  var Text_textScaleFactor = dart.privateName(text, "Text.textScaleFactor");
+  var Text_overflow = dart.privateName(text, "Text.overflow");
+  var Text_softWrap = dart.privateName(text, "Text.softWrap");
+  var Text_locale = dart.privateName(text, "Text.locale");
+  var Text_textDirection = dart.privateName(text, "Text.textDirection");
+  var Text_textAlign = dart.privateName(text, "Text.textAlign");
+  var Text_strutStyle = dart.privateName(text, "Text.strutStyle");
+  var Text_style = dart.privateName(text, "Text.style");
+  var Text_textSpan = dart.privateName(text, "Text.textSpan");
+  var Text_data = dart.privateName(text, "Text.data");
+  var Color_value = dart.privateName(ui, "Color.value");
+  var TextStyle_fontFeatures = dart.privateName(text_style, "TextStyle.fontFeatures");
+  var TextStyle_shadows = dart.privateName(text_style, "TextStyle.shadows");
+  var TextStyle_debugLabel = dart.privateName(text_style, "TextStyle.debugLabel");
+  var TextStyle_decorationThickness = dart.privateName(text_style, "TextStyle.decorationThickness");
+  var TextStyle_decorationStyle = dart.privateName(text_style, "TextStyle.decorationStyle");
+  var TextStyle_decorationColor = dart.privateName(text_style, "TextStyle.decorationColor");
+  var TextStyle_decoration = dart.privateName(text_style, "TextStyle.decoration");
+  var TextStyle_background = dart.privateName(text_style, "TextStyle.background");
+  var TextStyle_foreground = dart.privateName(text_style, "TextStyle.foreground");
+  var TextStyle_locale = dart.privateName(text_style, "TextStyle.locale");
+  var TextStyle_height = dart.privateName(text_style, "TextStyle.height");
+  var TextStyle_textBaseline = dart.privateName(text_style, "TextStyle.textBaseline");
+  var TextStyle_wordSpacing = dart.privateName(text_style, "TextStyle.wordSpacing");
+  var TextStyle_letterSpacing = dart.privateName(text_style, "TextStyle.letterSpacing");
+  var TextStyle_fontStyle = dart.privateName(text_style, "TextStyle.fontStyle");
+  var FontWeight_index = dart.privateName(ui, "FontWeight.index");
+  var TextStyle_fontWeight = dart.privateName(text_style, "TextStyle.fontWeight");
+  var TextStyle_fontSize = dart.privateName(text_style, "TextStyle.fontSize");
+  var TextStyle__package = dart.privateName(text_style, "TextStyle._package");
+  var TextStyle__fontFamilyFallback = dart.privateName(text_style, "TextStyle._fontFamilyFallback");
+  var TextStyle_fontFamily = dart.privateName(text_style, "TextStyle.fontFamily");
+  var TextStyle_backgroundColor = dart.privateName(text_style, "TextStyle.backgroundColor");
+  var TextStyle_color = dart.privateName(text_style, "TextStyle.color");
+  var TextStyle_inherit = dart.privateName(text_style, "TextStyle.inherit");
+  splashscreen.SplashScreen = class SplashScreen extends framework.StatefulWidget {
+    get seconds() {
+      return this[seconds$];
+    }
+    set seconds(value) {
+      super.seconds = value;
+    }
+    get title() {
+      return this[title$];
+    }
+    set title(value) {
+      super.title = value;
+    }
+    get backgroundColor() {
+      return this[backgroundColor$];
+    }
+    set backgroundColor(value) {
+      super.backgroundColor = value;
+    }
+    get styleTextUnderTheLoader() {
+      return this[styleTextUnderTheLoader$];
+    }
+    set styleTextUnderTheLoader(value) {
+      super.styleTextUnderTheLoader = value;
+    }
+    get navigateAfterSeconds() {
+      return this[navigateAfterSeconds$];
+    }
+    set navigateAfterSeconds(value) {
+      super.navigateAfterSeconds = value;
+    }
+    get photoSize() {
+      return this[photoSize$];
+    }
+    set photoSize(value) {
+      super.photoSize = value;
+    }
+    get onClick() {
+      return this[onClick$];
+    }
+    set onClick(value) {
+      super.onClick = value;
+    }
+    get loaderColor() {
+      return this[loaderColor$];
+    }
+    set loaderColor(value) {
+      super.loaderColor = value;
+    }
+    get image() {
+      return this[image$];
+    }
+    set image(value) {
+      super.image = value;
+    }
+    get loadingText() {
+      return this[loadingText$];
+    }
+    set loadingText(value) {
+      super.loadingText = value;
+    }
+    get imageBackground() {
+      return this[imageBackground$];
+    }
+    set imageBackground(value) {
+      super.imageBackground = value;
+    }
+    get gradientBackground() {
+      return this[gradientBackground$];
+    }
+    set gradientBackground(value) {
+      super.gradientBackground = value;
+    }
+    get useLoader() {
+      return this[useLoader$];
+    }
+    set useLoader(value) {
+      super.useLoader = value;
+    }
+    get pageRoute() {
+      return this[pageRoute$];
+    }
+    set pageRoute(value) {
+      super.pageRoute = value;
+    }
+    get routeName() {
+      return this[routeName$];
+    }
+    set routeName(value) {
+      super.routeName = value;
+    }
+    get navigateAfterFuture() {
+      return this[navigateAfterFuture$];
+    }
+    set navigateAfterFuture(value) {
+      super.navigateAfterFuture = value;
+    }
+    static timer(opts) {
+      let seconds = opts && 'seconds' in opts ? opts.seconds : null;
+      let loaderColor = opts && 'loaderColor' in opts ? opts.loaderColor : null;
+      let backgroundColor = opts && 'backgroundColor' in opts ? opts.backgroundColor : null;
+      let photoSize = opts && 'photoSize' in opts ? opts.photoSize : null;
+      let loadingText = opts && 'loadingText' in opts ? opts.loadingText : null;
+      let image = opts && 'image' in opts ? opts.image : null;
+      let pageRoute = opts && 'pageRoute' in opts ? opts.pageRoute : null;
+      let onClick = opts && 'onClick' in opts ? opts.onClick : null;
+      let navigateAfterSeconds = opts && 'navigateAfterSeconds' in opts ? opts.navigateAfterSeconds : null;
+      let title = opts && 'title' in opts ? opts.title : null;
+      let styleTextUnderTheLoader = opts && 'styleTextUnderTheLoader' in opts ? opts.styleTextUnderTheLoader : null;
+      let imageBackground = opts && 'imageBackground' in opts ? opts.imageBackground : null;
+      let gradientBackground = opts && 'gradientBackground' in opts ? opts.gradientBackground : null;
+      let useLoader = opts && 'useLoader' in opts ? opts.useLoader : null;
+      let routeName = opts && 'routeName' in opts ? opts.routeName : null;
+      let $36creationLocationd_0dea112b090073317d4 = opts && '$creationLocationd_0dea112b090073317d4' in opts ? opts.$creationLocationd_0dea112b090073317d4 : null;
+      return new splashscreen.SplashScreen.new({loaderColor: loaderColor, seconds: seconds, photoSize: photoSize, loadingText: loadingText, backgroundColor: backgroundColor, image: image, pageRoute: pageRoute, onClick: onClick, navigateAfterSeconds: navigateAfterSeconds, title: title, styleTextUnderTheLoader: styleTextUnderTheLoader, imageBackground: imageBackground, gradientBackground: gradientBackground, useLoader: useLoader, routeName: routeName, $creationLocationd_0dea112b090073317d4: $36creationLocationd_0dea112b090073317d4});
+    }
+    static network(opts) {
+      let navigateAfterFuture = opts && 'navigateAfterFuture' in opts ? opts.navigateAfterFuture : null;
+      let loaderColor = opts && 'loaderColor' in opts ? opts.loaderColor : null;
+      let backgroundColor = opts && 'backgroundColor' in opts ? opts.backgroundColor : null;
+      let photoSize = opts && 'photoSize' in opts ? opts.photoSize : null;
+      let loadingText = opts && 'loadingText' in opts ? opts.loadingText : null;
+      let image = opts && 'image' in opts ? opts.image : null;
+      let pageRoute = opts && 'pageRoute' in opts ? opts.pageRoute : null;
+      let onClick = opts && 'onClick' in opts ? opts.onClick : null;
+      let navigateAfterSeconds = opts && 'navigateAfterSeconds' in opts ? opts.navigateAfterSeconds : null;
+      let title = opts && 'title' in opts ? opts.title : null;
+      let styleTextUnderTheLoader = opts && 'styleTextUnderTheLoader' in opts ? opts.styleTextUnderTheLoader : null;
+      let imageBackground = opts && 'imageBackground' in opts ? opts.imageBackground : null;
+      let gradientBackground = opts && 'gradientBackground' in opts ? opts.gradientBackground : null;
+      let useLoader = opts && 'useLoader' in opts ? opts.useLoader : null;
+      let routeName = opts && 'routeName' in opts ? opts.routeName : null;
+      let $36creationLocationd_0dea112b090073317d4 = opts && '$creationLocationd_0dea112b090073317d4' in opts ? opts.$creationLocationd_0dea112b090073317d4 : null;
+      return new splashscreen.SplashScreen.new({loaderColor: loaderColor, navigateAfterFuture: navigateAfterFuture, photoSize: photoSize, loadingText: loadingText, backgroundColor: backgroundColor, image: image, pageRoute: pageRoute, onClick: onClick, navigateAfterSeconds: navigateAfterSeconds, title: title, styleTextUnderTheLoader: styleTextUnderTheLoader, imageBackground: imageBackground, gradientBackground: gradientBackground, useLoader: useLoader, routeName: routeName, $creationLocationd_0dea112b090073317d4: $36creationLocationd_0dea112b090073317d4});
+    }
+    createState() {
+      return new splashscreen._SplashScreenState.new();
+    }
+  };
+  (splashscreen.SplashScreen.new = function(opts) {
+    let loaderColor = opts && 'loaderColor' in opts ? opts.loaderColor : null;
+    let navigateAfterFuture = opts && 'navigateAfterFuture' in opts ? opts.navigateAfterFuture : null;
+    let seconds = opts && 'seconds' in opts ? opts.seconds : null;
+    let photoSize = opts && 'photoSize' in opts ? opts.photoSize : null;
+    let pageRoute = opts && 'pageRoute' in opts ? opts.pageRoute : null;
+    let onClick = opts && 'onClick' in opts ? opts.onClick : null;
+    let navigateAfterSeconds = opts && 'navigateAfterSeconds' in opts ? opts.navigateAfterSeconds : null;
+    let title = opts && 'title' in opts ? opts.title : C[0] || CT.C0;
+    let backgroundColor = opts && 'backgroundColor' in opts ? opts.backgroundColor : C[4] || CT.C4;
+    let styleTextUnderTheLoader = opts && 'styleTextUnderTheLoader' in opts ? opts.styleTextUnderTheLoader : C[5] || CT.C5;
+    let image = opts && 'image' in opts ? opts.image : null;
+    let loadingText = opts && 'loadingText' in opts ? opts.loadingText : C[8] || CT.C8;
+    let imageBackground = opts && 'imageBackground' in opts ? opts.imageBackground : null;
+    let gradientBackground = opts && 'gradientBackground' in opts ? opts.gradientBackground : null;
+    let useLoader = opts && 'useLoader' in opts ? opts.useLoader : true;
+    let routeName = opts && 'routeName' in opts ? opts.routeName : null;
+    let $36creationLocationd_0dea112b090073317d4 = opts && '$creationLocationd_0dea112b090073317d4' in opts ? opts.$creationLocationd_0dea112b090073317d4 : null;
+    this[loaderColor$] = loaderColor;
+    this[navigateAfterFuture$] = navigateAfterFuture;
+    this[seconds$] = seconds;
+    this[photoSize$] = photoSize;
+    this[pageRoute$] = pageRoute;
+    this[onClick$] = onClick;
+    this[navigateAfterSeconds$] = navigateAfterSeconds;
+    this[title$] = title;
+    this[backgroundColor$] = backgroundColor;
+    this[styleTextUnderTheLoader$] = styleTextUnderTheLoader;
+    this[image$] = image;
+    this[loadingText$] = loadingText;
+    this[imageBackground$] = imageBackground;
+    this[gradientBackground$] = gradientBackground;
+    this[useLoader$] = useLoader;
+    this[routeName$] = routeName;
+    splashscreen.SplashScreen.__proto__.new.call(this, {$creationLocationd_0dea112b090073317d4: $36creationLocationd_0dea112b090073317d4});
+    ;
+  }).prototype = splashscreen.SplashScreen.prototype;
+  dart.addTypeTests(splashscreen.SplashScreen);
+  dart.addTypeCaches(splashscreen.SplashScreen);
+  dart.setMethodSignature(splashscreen.SplashScreen, () => ({
+    __proto__: dart.getMethods(splashscreen.SplashScreen.__proto__),
+    createState: dart.fnType(dart.legacy(splashscreen._SplashScreenState), [])
+  }));
+  dart.setLibraryUri(splashscreen.SplashScreen, I[0]);
+  dart.setFieldSignature(splashscreen.SplashScreen, () => ({
+    __proto__: dart.getFields(splashscreen.SplashScreen.__proto__),
+    seconds: dart.finalFieldType(dart.legacy(core.int)),
+    title: dart.finalFieldType(dart.legacy(text.Text)),
+    backgroundColor: dart.finalFieldType(dart.legacy(ui.Color)),
+    styleTextUnderTheLoader: dart.finalFieldType(dart.legacy(text_style.TextStyle)),
+    navigateAfterSeconds: dart.finalFieldType(dart.dynamic),
+    photoSize: dart.finalFieldType(dart.legacy(core.double)),
+    onClick: dart.finalFieldType(dart.dynamic),
+    loaderColor: dart.finalFieldType(dart.legacy(ui.Color)),
+    image: dart.finalFieldType(dart.legacy(image.Image)),
+    loadingText: dart.finalFieldType(dart.legacy(text.Text)),
+    imageBackground: dart.finalFieldType(dart.legacy(image_provider.ImageProvider$(dart.legacy(core.Object)))),
+    gradientBackground: dart.finalFieldType(dart.legacy(gradient.Gradient)),
+    useLoader: dart.finalFieldType(dart.legacy(core.bool)),
+    pageRoute: dart.finalFieldType(dart.legacy(navigator.Route)),
+    routeName: dart.finalFieldType(dart.legacy(core.String)),
+    navigateAfterFuture: dart.finalFieldType(dart.legacy(async.Future))
+  }));
+  var EdgeInsets_bottom = dart.privateName(edge_insets, "EdgeInsets.bottom");
+  var EdgeInsets_right = dart.privateName(edge_insets, "EdgeInsets.right");
+  var EdgeInsets_top = dart.privateName(edge_insets, "EdgeInsets.top");
+  var EdgeInsets_left = dart.privateName(edge_insets, "EdgeInsets.left");
+  splashscreen._SplashScreenState = class _SplashScreenState extends framework.State$(dart.legacy(splashscreen.SplashScreen)) {
+    initState() {
+      super.initState();
+      if (this.widget.routeName != null && T.StringL().is(this.widget.routeName) && this.widget.routeName[$_get](0) !== "/") {
+        dart.throw(new core.ArgumentError.new("widget.routeName must be a String beginning with forward slash (/)"));
+      }
+      if (this.widget.navigateAfterFuture == null) {
+        async.Timer.new(new core.Duration.new({seconds: this.widget.seconds}), dart.fn(() => {
+          if (T.StringL().is(this.widget.navigateAfterSeconds)) {
+            navigator.Navigator.of(this.context).pushReplacementNamed(T.ObjectL(), T.ObjectL(), T.StringL().as(this.widget.navigateAfterSeconds));
+          } else if (T.WidgetL().is(this.widget.navigateAfterSeconds)) {
+            navigator.Navigator.of(this.context).pushReplacement(dart.dynamic, T.ObjectL(), this.widget.pageRoute != null ? this.widget.pageRoute : new page.MaterialPageRoute.new({settings: this.widget.routeName != null ? new navigator.RouteSettings.new({name: dart.str(this.widget.routeName)}) : null, builder: dart.fn(context => T.WidgetL().as(this.widget.navigateAfterSeconds), T.BuildContextLToWidgetL())}));
+          } else {
+            dart.throw(new core.ArgumentError.new("widget.navigateAfterSeconds must either be a String or Widget"));
+          }
+        }, T.VoidToNull()));
+      } else {
+        this.widget.navigateAfterFuture.then(core.Null, dart.fn(navigateTo => {
+          if (T.StringL().is(navigateTo)) {
+            navigator.Navigator.of(this.context).pushReplacementNamed(T.ObjectL(), T.ObjectL(), navigateTo);
+          } else if (T.WidgetL().is(navigateTo)) {
+            navigator.Navigator.of(this.context).pushReplacement(dart.dynamic, T.ObjectL(), this.widget.pageRoute != null ? this.widget.pageRoute : new page.MaterialPageRoute.new({settings: this.widget.routeName != null ? new navigator.RouteSettings.new({name: dart.str(this.widget.routeName)}) : null, builder: dart.fn(context => navigateTo, T.BuildContextLToWidgetL())}));
+          } else {
+            dart.throw(new core.ArgumentError.new("widget.navigateAfterFuture must either be a String or Widget"));
+          }
+        }, T.dynamicToNull()));
+      }
+    }
+    build(context) {
+      return new scaffold.Scaffold.new({body: new ink_well.InkWell.new({onTap: T.VoidToNvoid().as(this.widget.onClick), child: new basic.Stack.new({fit: stack.StackFit.expand, children: T.JSArrayOfWidgetL().of([new container.Container.new({decoration: new box_decoration.BoxDecoration.new({image: this.widget.imageBackground == null ? null : new decoration_image.DecorationImage.new({fit: box_fit.BoxFit.cover, image: this.widget.imageBackground}), gradient: this.widget.gradientBackground, color: this.widget.backgroundColor}), $creationLocationd_0dea112b090073317d4: C[12] || CT.C12}), new basic.Column.new({mainAxisAlignment: flex.MainAxisAlignment.start, children: T.JSArrayOfWidgetL().of([new basic.Expanded.new({flex: 2, child: new container.Container.new({child: new basic.Column.new({mainAxisAlignment: flex.MainAxisAlignment.center, children: T.JSArrayOfWidgetL().of([new circle_avatar.CircleAvatar.new({backgroundColor: colors.Colors.transparent, child: new heroes.Hero.new({tag: "splashscreenImage", child: new container.Container.new({child: this.widget.image, $creationLocationd_0dea112b090073317d4: C[15] || CT.C15}), $creationLocationd_0dea112b090073317d4: C[18] || CT.C18}), radius: this.widget.photoSize, $creationLocationd_0dea112b090073317d4: C[22] || CT.C22}), new basic.Padding.new({padding: C[27] || CT.C27, $creationLocationd_0dea112b090073317d4: C[28] || CT.C28}), this.widget.title]), $creationLocationd_0dea112b090073317d4: C[31] || CT.C31}), $creationLocationd_0dea112b090073317d4: C[35] || CT.C35}), $creationLocationd_0dea112b090073317d4: C[38] || CT.C38}), new basic.Expanded.new({flex: 1, child: new basic.Column.new({mainAxisAlignment: flex.MainAxisAlignment.center, children: T.JSArrayOfWidgetL().of([!dart.test(this.widget.useLoader) ? new container.Container.new({$creationLocationd_0dea112b090073317d4: C[42] || CT.C42}) : new progress_indicator.CircularProgressIndicator.new({valueColor: new (T.AlwaysStoppedAnimationOfColorL()).new(this.widget.loaderColor), $creationLocationd_0dea112b090073317d4: C[44] || CT.C44}), new basic.Padding.new({padding: C[47] || CT.C47, $creationLocationd_0dea112b090073317d4: C[48] || CT.C48}), this.widget.loadingText]), $creationLocationd_0dea112b090073317d4: C[51] || CT.C51}), $creationLocationd_0dea112b090073317d4: C[55] || CT.C55})]), $creationLocationd_0dea112b090073317d4: C[59] || CT.C59})]), $creationLocationd_0dea112b090073317d4: C[63] || CT.C63}), $creationLocationd_0dea112b090073317d4: C[67] || CT.C67}), $creationLocationd_0dea112b090073317d4: C[71] || CT.C71});
+    }
+  };
+  (splashscreen._SplashScreenState.new = function() {
+    splashscreen._SplashScreenState.__proto__.new.call(this);
+    ;
+  }).prototype = splashscreen._SplashScreenState.prototype;
+  dart.addTypeTests(splashscreen._SplashScreenState);
+  dart.addTypeCaches(splashscreen._SplashScreenState);
+  dart.setMethodSignature(splashscreen._SplashScreenState, () => ({
+    __proto__: dart.getMethods(splashscreen._SplashScreenState.__proto__),
+    build: dart.fnType(dart.legacy(framework.Widget), [dart.legacy(framework.BuildContext)])
+  }));
+  dart.setLibraryUri(splashscreen._SplashScreenState, I[0]);
+  dart.trackLibraries("packages/splashscreen/splashscreen.dart", {
+    "package:splashscreen/splashscreen.dart": splashscreen
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["splashscreen.dart"],"names":[],"mappings":"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","file":"../../../../../../../../../../packages/splashscreen/splashscreen.dart.lib.js"}');
+  // Exports:
+  return {
+    splashscreen: splashscreen
+  };
+}));
+
+//# sourceMappingURL=splashscreen.dart.lib.js.map
